@@ -9,6 +9,9 @@ module.exports = app => {
   
     // Retrieve all user
     app.get("/users", user.findAll);
+
+    // Retrieve all user
+    app.post("/users", user.findAll);
   
     // Retrieve a single Customer with email
     app.get("/user/:email", user.findOne);

@@ -28,9 +28,24 @@ exports.findAll = (req, res) => {
     User.getAll((err, data) => {
       if (err)
         res.status(500).send({
+          response:data?data:[],status:false,
           message:
             err.message || "Some error occurred while retrieving customers."
         });
-      else res.send(data);
+      else res.status(200).send({response:data?data:[],status:true,message:''});
+    });
+  };
+
+  exports.create = (req, res) => {
+    // console.log(req.body);
+    
+    User.create({req},(err, data) => {
+      if (err)
+        res.status(500).send({
+          response:data?data:[],status:false,
+          message:
+            err.message || "Some error occurred while retrieving customers."
+        });
+      else res.status(200).send({response:data?data:[],status:true,message:''});
     });
   };
