@@ -3,6 +3,9 @@ module.exports = app => {
   
     // Create a new Customer
     app.post("/user", user.create);
+
+  // Create a new User profile
+  app.post("/profile/createNew", user.create);
   
     // Retrieve all user
     app.get("/users", user.findAll);

@@ -5,7 +5,7 @@ var config = {
         //mysql connection settings
         database: {
             host     : 'localhost',
-            database : 'mukund_programming',
+            database : 'unsportsmama',
             user     : 'root',
             password : 'B560b560@',
             port     : '3306'
@@ -22,7 +22,7 @@ var config = {
         //mysql connection settings
         database: {
             host     : 'localhost',
-            database : 'mukund_programming',
+            database : 'unsportsmama',
             user     : 'root',
             password : 'B560b560@',
             port     : '3306'
